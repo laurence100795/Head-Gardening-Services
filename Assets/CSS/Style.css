@@ -1,27 +1,24 @@
 /*------------------NAVBAR------------------*/
 
 .Navigationbar {
-    padding: 0px;
-    width:100%;
+    padding: 0;
 }
 
 .TopNav {
-    margin:0;
+    margin: 0;
     padding-top: 0px;
-    border-bottom: solid;
-    border-color: #10582d;
-    border-width: 1px;
     background-color: #525252;
     width: 100%;
     width: 100vw;
-
 }
 
 .BottomNav {
+    border-top: solid;
+    border-color: #10582d;
+    border-width: 1px;
     background-color: #636363;
     padding: 0px;
     width: 100%;
-
 }
 
 .NavLogo {
@@ -63,10 +60,106 @@
     padding-right: 20px;
 }
 
-.hundred {
-    width: 100%;
+.navbar-toggler {
+    border: none;
 }
 
+.mr-4 {
+    text-align: center;
+    margin-right: 0rem!important;
+}
 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fafafa;
+}
+
+.nav-text {
+    color: #fafafa;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-text:hover {
+    color: #72b844!important;
+}
 
 /*------------------NAVBAR------------------*/
+
+/*------------------NAVBAR-MEDIAQUERIES------------------*/
+
+@media (max-width:768px) {
+    .MediaLogo {
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .MediaTele {
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .NavLogo {
+        margin-left: 0;
+        margin-right: 0;
+        width: 86px;
+        height: 48px;
+    }
+    .NavTele {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+
+    }
+    .fa-phone {
+        margin-top: 0;
+    }
+    .navbar-dark .navbar-toggler {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*------------------NAVBAR-MEDIAQUERIES------------------*/
+
+/*------------------FOOTER------------------*/
+
+.FooterBox {
+    border-top: solid;
+    border-color: #10582d;
+    border-width: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #525252;
+    padding: 0;
+    margin: 0;
+}
+
+.CreatorCredit {
+    font-size:10px;
+    color:#fafafa;
+    text-align:left;
+    margin-top:15px;
+    font-family:"Livvic", sans-serif;
+    font-weight:300;
+}
+
+.FooterIcon1 {
+    color:#fafafa;
+    position:absolute;
+    right:5%;
+    display:inline-block;
+    padding:15px 5px;
+}
+
+.FooterIcon2 {
+    color:#fafafa;
+    position:absolute;
+    right:10%;
+    display:inline-block;
+    padding:15px 5px;
+}
+/*------------------FOOTER------------------*/
