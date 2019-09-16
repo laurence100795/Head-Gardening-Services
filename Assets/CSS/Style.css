@@ -119,6 +119,7 @@
     }
 }
 
+
 /*------------------NAVBAR-MEDIAQUERIES------------------*/
 
 /*------------------FOOTER------------------*/
@@ -127,7 +128,7 @@
     border-top: solid;
     border-color: #10582d;
     border-width: 2px;
-    position: absolute;
+    position: static;
     bottom: 0;
     left: 0;
     right: 0;
@@ -139,27 +140,87 @@
 }
 
 .CreatorCredit {
-    font-size:10px;
-    color:#fafafa;
-    text-align:left;
-    margin-top:15px;
-    font-family:"Livvic", sans-serif;
-    font-weight:300;
+    font-size: 10px;
+    color: #fafafa;
+    text-align: left;
+    margin-top: 15px;
+    font-family: "Livvic", sans-serif;
+    font-weight: 300;
 }
 
 .FooterIcon1 {
-    color:#fafafa;
-    position:absolute;
-    right:5%;
-    display:inline-block;
-    padding:15px 5px;
+    color: #fafafa;
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+    padding: 15px 5px;
 }
 
 .FooterIcon2 {
-    color:#fafafa;
-    position:absolute;
-    right:10%;
-    display:inline-block;
-    padding:15px 5px;
+    color: #fafafa;
+    position: absolute;
+    right: 10%;
+    display: inline-block;
+    padding: 15px 5px;
 }
+
 /*------------------FOOTER------------------*/
+
+/*------------------BODY------------------*/
+
+p {
+    margin: 0;
+}
+.container-fluid {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+.HomeBodyImage {
+    height: 80vh;
+    background: url(../Images/BackgroundHGS.jpg) no-repeat top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.opague-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.HomeCallout {
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    color: #fafafa;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.QuoteSpace {
+    padding-top: 15px;    
+}
+
+.QuoteHome {
+    position: relative;
+    background-color: #72b844;
+    padding-bottom: 35px;
+}
+
+.QuotesBox {
+    display: inline-block;
+    text-align: center;
+    font-family: "Livvic", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    padding-top: 30px;
+}
+
+/*------------------BODY------------------*/
