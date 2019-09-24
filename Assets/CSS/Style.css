@@ -150,6 +150,10 @@ html {
     font-size: 16px;
 }
 
+.FooterFixed {
+    position: fixed;
+}
+
 /*------------------FOOTER------------------*/
 
 /*------------------FOOTER MEDIAQUERIES------------------*/
@@ -173,11 +177,14 @@ html {
         height: 8.5%;
     }
 }
+
 @media (max-width:490px) {
     .FooterText {
-    padding: 15px 0 0 0;
+        padding: 7px 0 0 0;
+        margin: 0;
+    }
 }
-}
+
 /*------------------FOOTER MEDIAQUERIES------------------*/
 
 /*------------------STYLE REMOVER------------------*/
@@ -430,3 +437,79 @@ p {
 /*------------------BODY------------------*/
 
 /*------------------HOMEPAGE------------------*/
+
+/*------------------CONTACT------------------*/
+
+.ContactContent {
+    margin-top: 125px;
+    padding-top: 15px;
+    text-align: center;
+    height: 100%;
+    background-color: #737373;
+    color: #fafafa;
+    font-family: "Livvic", Sans-Serif;
+    font-weight: 200;
+}
+
+.ContactBodyImage {
+    height: 80vh;
+    background: url(../Images/BackgroundContact.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fa-facebook {
+    background-color: #fafafa;
+    color: #72b844;
+    border-radius: 50%;
+}
+
+.ContactTitle {
+    font-family: "Exo", Sans-serif;
+    font-weight: 400;
+}
+
+.CalloutContact {
+    padding: 5px 0;
+}
+
+.ContactFacebook {
+    padding: 5px 0;
+}
+
+.ContactEmail {
+    padding: 5px 0;
+}
+
+.ContactMobile {
+    padding: 5px 0;
+}
+
+.ContactDivider {
+    width: 30px;
+    height: 5px;
+    border: 0;
+    background-color: #72b844;
+}
+
+.table th {
+    padding:0;
+    color:#fafafa;
+}
+
+.table td, .table th {
+    padding:0;
+    border-top: 1px
+    solid #72b844;
+    color:#fafafa;
+    font-family:"Exo", Sans-Serif;
+    font-weight:200;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 0;
+}
+/*------------------CONTACT------------------*/
