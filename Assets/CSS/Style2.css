@@ -1,0 +1,257 @@
+/*------------------NAVBAR------------------*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.Navigationbar {
+    padding: 0;
+}
+
+.TopNav {
+    margin: 0;
+    padding-top: 0px;
+    background-color: #525252;
+    width: 100%;
+    width: 100vw;
+
+}
+
+.BottomNav {
+    border-top: solid;
+    border-color: #10582d;
+    border-width: 1px;
+    background-color: #636363;
+    padding: 0px;
+    width: 100%;
+}
+
+.NavLogo {
+    width: 134px;
+    height: 75px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.NavTele {
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fafafa;
+    font-family: "Livvic", sans-serif;
+    font-weight: 100;
+}
+
+.fa-phone {
+    color: #fafafa;
+    background-color: #10582d;
+    border: solid;
+    padding: 3px;
+    border-color: #fafafa;
+    border-radius: 25%;
+    border-width: 3px;
+    margin-top: 20px;
+}
+
+.nav-link {
+    color: #fafafa;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.mr-4 {
+    text-align: center;
+    margin-right: 0rem!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fafafa;
+}
+
+.nav-text {
+    color: #fafafa;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.nav-text:hover {
+    color: #72b844!important;
+}
+
+/*------------------NAVBAR------------------*/
+
+/*------------------NAVBAR-MEDIAQUERIES------------------*/
+
+@media (max-width:767px) {
+    .MediaLogo {
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .MediaTele {
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .NavLogo {
+        margin-left: 0;
+        margin-right: 0;
+        width: 86px;
+        height: 48px;
+    }
+    .NavTele {
+        margin: 0 0 5px 0;
+        font-size: 18px;
+
+    }
+    .fa-phone {
+        margin-top: 0;
+    }
+    .navbar-dark .navbar-toggler {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*------------------NAVBAR-MEDIAQUERIES------------------*/
+
+/*------------------FOOTER------------------*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    border-top: solid;
+    border-color: #10582d;
+    border-width: 2px;
+    background-color: #525252;
+    text-align: center;
+    color: #fafafa;
+    font-family: "livvic", Sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.FooterText {
+    margin-bottom: 0;
+}
+    
+    
+
+/*------------------FOOTER------------------*/
+
+.ContactContent {
+    position: relative;
+    padding-top: 135px;
+    text-align: center;
+    background-color: #737373;
+    color: #fafafa;
+    font-family: "Livvic", Sans-Serif;
+    font-weight: 200;
+}
+
+.ContactBodyImage {
+    height: 100%;
+    background: url(../Images/BackgroundContact.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.fa-facebook {
+    background-color: #fafafa;
+    color: #72b844;
+    border-radius: 50%;
+}
+
+.ContactTitle {
+    font-family: "Exo", Sans-serif;
+    font-weight: 400;
+}
+
+.CalloutContact {
+    padding: 5px 0;
+}
+
+.ContactFacebook {
+    padding: 5px 0;
+}
+
+.ContactEmail {
+    padding: 5px 0;
+}
+
+.ContactMobile {
+    padding: 5px 0;
+}
+
+.ContactDivider {
+    width: 30px;
+    height: 5px;
+    border: 0;
+    background-color: #72b844;
+}
+
+.table th {
+    padding: 0;
+    color: #fafafa;
+}
+
+.table td,
+.table th {
+    padding: 0;
+    border-top: 1px solid #72b844;
+    color: #fafafa;
+    font-family: "Exo", Sans-Serif;
+    font-weight: 200;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 0;
+}
+
+.EmailHighlight {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.NumberHighlight {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fafafa;
+}
+
+.NumberHighlight:hover {
+    color: #72b844;
+    text-decoration: none;
+}

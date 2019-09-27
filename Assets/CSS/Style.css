@@ -4,6 +4,7 @@ Body,
 html {
     Margin: 0;
     Height: 100%;
+    line-height: none;
 }
 
 .Navigationbar {
@@ -16,6 +17,7 @@ html {
     background-color: #525252;
     width: 100%;
     width: 100vw;
+
 }
 
 .BottomNav {
@@ -138,7 +140,7 @@ html {
     left: 0;
     width: 100%;
     background-color: #525252;
-    height: 7.5%;
+    height: 70px;
 }
 
 .FooterText {
@@ -151,9 +153,14 @@ html {
 }
 
 .FooterFixed {
-    position: fixed;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-
+.footer,
+.push {
+  height: 50px;
+}
 /*------------------FOOTER------------------*/
 
 /*------------------FOOTER MEDIAQUERIES------------------*/
@@ -172,11 +179,7 @@ html {
     }
 }
 
-@media (max-width:320px) {
-    .FooterBar {
-        height: 8.5%;
-    }
-}
+
 
 @media (max-width:490px) {
     .FooterText {
@@ -441,10 +444,9 @@ p {
 /*------------------CONTACT------------------*/
 
 .ContactContent {
-    margin-top: 125px;
-    padding-top: 15px;
+    position: relative;
+    padding-top: 135px;
     text-align: center;
-    height: 100%;
     background-color: #737373;
     color: #fafafa;
     font-family: "Livvic", Sans-Serif;
@@ -458,6 +460,7 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index: -1;
 }
 
 .fa-facebook {
@@ -495,21 +498,48 @@ p {
 }
 
 .table th {
-    padding:0;
-    color:#fafafa;
+    padding: 0;
+    color: #fafafa;
 }
 
-.table td, .table th {
-    padding:0;
-    border-top: 1px
-    solid #72b844;
-    color:#fafafa;
-    font-family:"Exo", Sans-Serif;
-    font-weight:200;
+.table td,
+.table th {
+    padding: 0;
+    border-top: 1px solid #72b844;
+    color: #fafafa;
+    font-family: "Exo", Sans-Serif;
+    font-weight: 200;
 }
 
 .table thead th {
     vertical-align: bottom;
     border-bottom: 0;
 }
+
+.EmailHighlight {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.NumberHighlight {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fafafa;
+}
+
+.NumberHighlight:hover {
+    color: #72b844;
+    text-decoration: none;
+}
+
+/*------------------CONTACT-MEDIAQUERIES------------------*/
+
+@media (min-width:991px) {}
+
+@media (min-width:320px) {}
+
+@media (min-width:490px) {}
+
+/*------------------CONTACT-MEDIAQUERIES------------------*/
+
 /*------------------CONTACT------------------*/
