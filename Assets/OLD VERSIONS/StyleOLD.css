@@ -1,5 +1,12 @@
 /*------------------NAVBAR------------------*/
 
+Body,
+html {
+    Margin: 0;
+    Height: 100%;
+    line-height: none;
+}
+
 .Navigationbar {
     padding: 0;
 }
@@ -39,15 +46,6 @@
     color: #fafafa;
     font-family: "Livvic", sans-serif;
     font-weight: 100;
-    -webkit-transition: color 0.5s ease-in-out;
-    -moz-transition: color 0.5s ease-in-out;
-    -o-transition: color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
-}
-
-.NavTele:hover {
-    color: #72b844;
-    text-decoration: none;
 }
 
 .fa-phone {
@@ -129,51 +127,88 @@
     }
 }
 
+
 /*------------------NAVBAR-MEDIAQUERIES------------------*/
 
 /*------------------FOOTER------------------*/
 
-html,
-body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    flex: 1 0 auto;
-}
-
-.footer {
-    flex-shrink: 0;
+.FooterBar {
     border-top: solid;
     border-color: #10582d;
     border-width: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #525252;
-    text-align: center;
-    color: #fafafa;
-    font-family: "livvic", Sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    height: 70px;
 }
 
 .FooterText {
-    margin-bottom: 0;
+    text-align: center;
+    color: #fafafa;
+    padding: 20px 0 0 0;
+    font-family: "livvic", Sans-serif;
+    font-weight: 200;
+    font-size: 16px;
 }
 
+.FooterFixed {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer,
+.push {
+  height: 50px;
+}
 /*------------------FOOTER------------------*/
 
-@media(max-width:767px) {
+/*------------------FOOTER MEDIAQUERIES------------------*/
+
+@media (max-width:575px) {
     .FooterText {
-        margin-bottom: 0;
         font-size: 12px;
+        padding: 0;
+        margin: 4px 0 0 0;
     }
 }
+
+@media (max-width:1024px) {
+    .FooterText {
+        padding: 22px 0 0 0;
+    }
+}
+
+
+
+@media (max-width:490px) {
+    .FooterText {
+        padding: 7px 0 0 0;
+        margin: 0;
+    }
+}
+
+/*------------------FOOTER MEDIAQUERIES------------------*/
+
+/*------------------STYLE REMOVER------------------*/
+
+p {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+/*------------------STYLE REMOVER------------------*/
+
+/*------------------HOMEPAGE------------------*/
+
+/*------------------BODY------------------*/
 
 /*------------------CALLOUT------------------*/
 
@@ -184,74 +219,39 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    z-index: -1;
 }
 
 .opague-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 80%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: -1;
+}
+
+.HomeCont2 {
+    padding-top: 150px;
 }
 
 .HomeCallout {
+    position: absolute;
     text-align: center;
     margin-top: 200px;
     color: #fafafa;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
-.CallQuote1 {
-    padding-top: 15px;
-    white-space: normal;
-    height: 100%;
-    font-family: "Exo", sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-}
-
-.CallQuote2 {
-    padding-top: 15px;
-    white-space: normal;
-    height: 100%;
-    font-family: "Exo", sans-serif;
-    font-weight: 200;
-    font-size: 28px;
-}
-
-/*------------------CALLOUT-MEDIAQUERIES------------------*/
-
-@media (max-width:991px) {
-    .CallQuote1 {
-        font-size: 34px;
-    }
-    .CallQuote2 {
-        font-size: 22px;
-    }
-
-}
-
-@media (max-width:767px) {
-    .CallQuote1 {
-        font-size: 26px;
-    }
-    .CallQuote2 {
-        font-size: 16px;
-    }
-    .HomeCallout {
-        margin-top: 135px;
-    }
-}
-
-/*------------------CALLOUT-MEDIAQUERIES------------------*/
 
 /*------------------CALLOUT------------------*/
 
-/*------------------SERVICES/HOME------------------*/
+/*------------------FEATURES/HOME------------------*/
 
 .FeatureServices {
+    position: relative;
+    height: 11%;
+    width: 100%;
     background-color: #525252;
     border-top: solid;
     border-color: #10582d;
@@ -260,8 +260,8 @@ body {
 
 .HomeServiceCol {
     display: inline-block;
+    width: 100%;
     text-align: center;
-    margin-bottom: 4px;
 }
 
 .ServiceHomeTitle {
@@ -298,17 +298,28 @@ body {
     color: #72b844;
 }
 
-/*------------------SERVICES/HOME-MEDIAQUERIES------------------*/
+/*------------------FEATURES/HOME QUERIES------------------*/
 
-@media(max-width:575px) {
-    .ServiceHomeSubtitle {
-        font-size: 13px;
+@media (max-width:991px) {
+
+    .FeatureServices {
+        height: 11%;
     }
 }
 
-/*------------------SERVICES/HOME-MEDIAQUERIES------------------*/
 
-/*------------------SERVICES/HOME------------------*/
+@media (max-width:767px) {
+    .FeatureServices {
+        height: 200px;
+    }
+    .HomeServiceCol {
+        padding: 0 0 10px 0;
+    }
+}
+
+/*------------------FEATURES/HOME QUERIES------------------*/
+
+/*------------------FEATURES/HOME------------------*/
 
 /*------------------QUOTES------------------*/
 
@@ -316,6 +327,22 @@ body {
     border-top: solid;
     border-color: #10582d;
     border-width: 2px;
+}
+
+.QuoteSpace1 {
+    padding-top: 15px;
+    white-space: normal;
+    height: 100%;
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+}
+
+.QuoteSpace2 {
+    padding-top: 15px;
+    white-space: normal;
+    height: 100%;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
 }
 
 .QuoteHome {
@@ -340,20 +367,81 @@ body {
     padding-top: 5px;
 }
 
+/*------------------QUOTES------------------*/
+
 /*------------------QUOTES-MEDIAQUERIES------------------*/
 
-@media(max-width:575px) {
-    .QuotesText {
-        padding-top: 0;
-        margin: 0;
+@media (max-width:767px) {
+    .QuoteSpace {
+        padding-top: 15px;
+        white-space: normal;
+        height: 100%;
+        font-family: "Exo", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    .HomeBodyImage {
+        height: 73vh;
+    }
+
+    .opague-overlay {
+        height: 100%;
+    }
+    .HomeCont2 {
+        padding-top: 40px;
+    }
+
+    .QuotesBox {
+        display: inline-block;
+        text-align: center;
+        font-family: "Kalam", sans-serif;
+        font-weight: 500;
+        color: #fafafa;
+        padding-top: 26px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width:575px) {
+    .HomeBodyImage {
+        height: 70vh;
+    }
+
+    .HomeCallout {
+        margin-top: 170px;
+    }
+
+    .QuoteSpace {
+        padding-top: 10px;
+    }
+    .QuoteSpace2 {
+        font-size: 15px;
+    }
+    .QuoteSpace1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:320px) {
+    .QuoteSpace1 {
+        padding-top: 0px;
+    }
+    .QuoteSpace2 {
+        padding-top: 5px;
+    }
+    .HomeCallout {
+        margin-top: 150px;
     }
 }
 
 /*------------------QUOTES-MEDIAQUERIES------------------*/
 
-/*------------------QUOTES------------------*/
+/*------------------BODY------------------*/
 
-/*------------------CONTACT-PAGE------------------*/
+/*------------------HOMEPAGE------------------*/
+
+/*------------------CONTACT------------------*/
 
 .ContactContent {
     position: relative;
@@ -366,7 +454,7 @@ body {
 }
 
 .ContactBodyImage {
-    height: 100%;
+    height: 80vh;
     background: url(../Images/BackgroundContact.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -437,10 +525,6 @@ body {
     font-size: 24px;
     font-weight: 400;
     color: #fafafa;
-    -webkit-transition: color 0.5s ease-in-out;
-    -moz-transition: color 0.5s ease-in-out;
-    -o-transition: color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
 }
 
 .NumberHighlight:hover {
@@ -448,14 +532,14 @@ body {
     text-decoration: none;
 }
 
-/*------------------CONTACT-PAGE-MEDIAQUERIES------------------*/
+/*------------------CONTACT-MEDIAQUERIES------------------*/
 
-@media(max-width:575px) {
-    .table {
-        font-size: 14px;
-    }
-}
+@media (min-width:991px) {}
 
-/*------------------CONTACT-PAGE-MEDIAQUERIES------------------*/
+@media (min-width:320px) {}
 
-/*------------------CONTACT-PAGE------------------*/
+@media (min-width:490px) {}
+
+/*------------------CONTACT-MEDIAQUERIES------------------*/
+
+/*------------------CONTACT------------------*/
