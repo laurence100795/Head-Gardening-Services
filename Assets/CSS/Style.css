@@ -59,6 +59,7 @@
     border-radius: 25%;
     border-width: 3px;
     margin-top: 20px;
+    margin-right: 5px;
 }
 
 .nav-link {
@@ -179,6 +180,8 @@ body {
 
 /*------------------FOOTER------------------*/
 
+/*------------------HOMEPAGE------------------*/
+
 /*------------------CALLOUT------------------*/
 
 .HomeBodyImage {
@@ -281,8 +284,9 @@ body {
     text-align: center;
     color: #fafafa;
     font-family: "Exo", Sans-serif;
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 2px;
 }
 
 .ServiceHomeLink {
@@ -334,21 +338,32 @@ body {
     display: inline-block;
     text-align: center;
     font-family: "Kalam", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     color: #fafafa;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 4px;
+    padding-bottom: 24px;
 }
 
 .QuotesText {
     padding-top: 5px;
+    font-size: 20px;
+}
+
+.QuoteName {
+    position: absolute;
+    padding-top: 5px;
+    bottom: -15px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 /*------------------QUOTES-MEDIAQUERIES------------------*/
 
 @media(max-width:575px) {
     .QuotesText {
-        padding-top: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
         margin: 0;
     }
 }
@@ -356,6 +371,8 @@ body {
 /*------------------QUOTES-MEDIAQUERIES------------------*/
 
 /*------------------QUOTES------------------*/
+
+/*------------------HOMEPAGE------------------*/
 
 /*------------------CONTACT-PAGE------------------*/
 
@@ -383,6 +400,14 @@ body {
     background-color: #fafafa;
     color: #72b844;
     border-radius: 50%;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.fa-facebook:hover {
+    color: #4267b2
 }
 
 .ContactTitle {
