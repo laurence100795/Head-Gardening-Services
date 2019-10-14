@@ -510,42 +510,88 @@ body {
     font-weight: 600;
 }
 
+.ServicesHeaderWeight {
+    font-weight: 500;
+    letter-spacing: 14px;
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
 .ServiceHeaderContext {
     font-family: "Exo", sans-serif;
     font-weight: 500;
 }
 
-.ServicesHeaderWeight {
-    font-weight: inherit;
+.ServicesContent {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .ServiceSubHeader {
     font-weight: 400;
-    font-family: "Livvic", sans-serif;
-    letter-spacing: 1px;
-}
-
-.ServiceLeft {
-    text-align: left;
-    background-color: #72b844;
-    color: #fafafa;
-
-}
-
-/*  #525252 grey */
-
-/*  #72b844 green*/
-
-.ServiceRight {
-    text-align: right;
-    background-color: #525252;
-    color: #fafafa;
-    opacity: 0.9;
+    font-family: "Exo", sans-serif;
+    letter-spacing: 2px;
+    font-size: 36px;
+    padding-top: 5px;
 }
 
 .ServiceContext {
     font-family: "livvic", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.ServiceLeft {
+    text-align: left;
+    color: #fafafa;
+    min-height: 200px;
+}
+
+.ServicesImageLeft {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4px;
+}
+
+.ImageColLeft {
+    background-color: #72b844;
+}
+
+.ServiceColLeft {
+    background-color: #72b844;
+    opacity: 0.9;
+}
+
+.ServiceRight {
+    text-align: right;
+    color: #fafafa;
+    min-height: 200px;
+}
+
+.ServicesImageRight {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 4px;
+
+}
+
+.ImageColRight {
+    background-color: #525252;
+}
+
+.ServiceColRight {
+    background-color: #525252;
+    opacity: 0.9;
 }
 
 .Guarantee {}
@@ -556,6 +602,34 @@ body {
     color: #fafafa;
     font-family: "Exo", sans-serif;
     font-weight: 400;
+}
+
+.ServiceLeft .ServiceSubHeader {
+    background-color: #525252;
+    margin: 8px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: #72b844;
+
+}
+
+.ServiceRight .ServiceSubHeader {
+    background-color: #72b844;
+    margin: 8px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: #525252;
+}
+
+.ServiceLeft .ServiceContext {
+    padding-left: 15px;
+    color: #525252;
+
+}
+
+.ServiceRight .ServiceContext {
+    padding-right: 15px;
+    color: #72b844;
 }
 
 /*------------------SERVICES-PAGE------------------*/
@@ -580,3 +654,37 @@ body {
 }
 
 /*------------------ABOUT-PAGE------------------*/
+
+/*MODAL*/
+
+.btn-primary {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    
+}
+
+.btn-primary:after {
+    background-color: #72b844;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.Modal-Close {
+    color: #fafafa;
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+.modal-header {
+    background-color: #72b844;
+    border:0;
+}
+/*MODAL*/
