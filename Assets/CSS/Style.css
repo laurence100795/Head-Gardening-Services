@@ -585,7 +585,10 @@ body {
     padding-top: 14px;
 }
 
-.Guarantee {}
+.Guarantee {
+    background-color: #525252;
+    opacity: 0.9;
+}
 
 .GuaranteeContext {
     text-align: center;
@@ -688,6 +691,9 @@ body {
     .ServicesHeaderWeight {
         font-size: 48px;
         letter-spacing: 11px;
+    }
+    .ServicesImage {
+        padding-top: 0;
     }
 }
 
