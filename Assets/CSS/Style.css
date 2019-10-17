@@ -387,7 +387,7 @@ body {
     font-weight: 200;
 }
 
-.ContactBodyImage {
+.BodyImage {
     height: 100%;
     background: url(../Images/BackgroundContact.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
@@ -705,21 +705,46 @@ body {
 
 .AboutContent {
     padding: 135px 0 0 0;
+    background-color: #737373;
+    border-left: solid;
+    border-right: solid;
+    border-color: #10582d;
+    border-width: 2px;
 }
 
 .row {
     margin: 0;
 }
 
-.AboutSubHeader {}
-
-.AboutSubContext {}
-
-.AboutPic {
-    height: 100%;
-    position: absolute;
+.AboutSubHeader {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #fafafa;
 }
 
+.AboutSubContext {
+    font-family: "Livvic", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #fafafa;
+}
+
+.AboutPic {
+    float: right;
+    width: 400px;
+    height: auto;
+    margin-left: 15px;
+    border: solid;
+    border-color: #10582d;
+    border-width: 2px;
+}
+
+.AboutPromise {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
 /*------------------ABOUT-PAGE------------------*/
 
 /*------------------MODAL------------------*/

@@ -17,3 +17,9 @@ On this page I'm going to display the services he provides. I want to have the i
 Contact-Page
 On this page I'm going to implement a little information and a statement from Eden regarding this and then link his contact information, such as email, facebook and instagram so people that are interested in his services
 they can get in contract with him.
+
+
+
+I used this to stop the button on the home page for the code to pass on HTML Validator - https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -
+I used this for all the background images on the pages - https://css-tricks.com/perfect-full-page-background-image/ - 
+I had a real problem getting the footer stick to the bottom of the page but a found this trip. I used technique 4 - https://css-tricks.com/couple-takes-sticky-footer/ -
