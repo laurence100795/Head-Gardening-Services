@@ -745,6 +745,36 @@ body {
     font-size: 22px;
     font-weight: 500;
 }
+
+/*------------------ABOUT-PAGE-MEDIAQUERIES-----------------*/
+
+@media(max-width:991px) {
+    .AboutSubContext {
+        font-size: 16px;
+    }
+    .AboutSubHeader {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:767px) {
+    .AboutSubContext {
+        font-size: 16px;
+        text-align: center;
+    }
+    .AboutSubHeader {
+        font-size: 24px;
+        text-align: center;
+    }
+    .AboutPic {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/*------------------ABOUT-PAGE-MEDIAQUERIES-----------------*/
+
 /*------------------ABOUT-PAGE------------------*/
 
 /*------------------MODAL------------------*/
