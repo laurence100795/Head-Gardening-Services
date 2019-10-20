@@ -185,7 +185,7 @@ body {
 /*------------------CALLOUT------------------*/
 
 .HomeBodyImage {
-    height: 80vh;
+    height: 100vh;
     background: url(../Images/BackgroundHGS.jpg) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -253,6 +253,12 @@ body {
 
 }
 
+
+@media (max-height:500px) {
+    .HomeBodyImage {
+        height: 150vh;
+    }
+}
 /*------------------CALLOUT-MEDIAQUERIES------------------*/
 
 /*------------------CALLOUT------------------*/
